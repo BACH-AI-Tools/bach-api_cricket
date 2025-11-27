@@ -30,7 +30,7 @@ Visit **[EMCP Platform](https://sit-emcp.kaleido.guru)** now to start your MCP j
 
 ## Introduction
 
-This is an automatically generated MCP server using [FastMCP](https://fastmcp.wiki) for accessing the Api Cricket API.
+This is an MCP server for accessing the Api Cricket API.
 
 - **PyPI Package**: `bach-api_cricket`
 - **Version**: 1.0.0
@@ -108,8 +108,8 @@ export API_KEY="your_api_key_here"
 {
   "mcpServers": {
     "api_cricket": {
-      "command": "python",
-      "args": ["E:\path\to\api_cricket\server.py"],
+      "command": "uvx",
+      "args": ["--from", "bach-api_cricket", "bach_api_cricket"],
       "env": {
         "API_KEY": "your_api_key_here"
       }
